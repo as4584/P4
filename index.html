@@ -8,3 +8,112 @@
 <title>Test page</title>
 <a href="./contact.html"><p>click here</p>
 <a href="./blog.html"><p>Click here </p>
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+        }
+
+        nav ul ul li {
+            width: 100%;
+            text-align: left;
+        }
+
+        .index-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            width: calc(25% - 20px);
+            margin: 10px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Your Website</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Dropdown</a>
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="index-cards">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Content of Card 1 goes here.</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>Content of Card 2 goes here.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Content of Card 3 goes here.</p>
+        </div>
+        <div class="card">
+            <h2>Card 4</h2>
+            <p>Content of Card 4 goes here.</p>
+        </div>
+    </div>
+
+</body>
+</html>
