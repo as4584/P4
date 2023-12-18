@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,8 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>Contact me</title>
+    <title>Masonry example · Bootstrap v5.0</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/masonry/">
 
@@ -37,18 +37,9 @@
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
-          font-size: 6.5rem;
+          font-size: 3.5rem;
         }
       }
-      body {
-            background: linear-gradient(to bottom right, #FFA500, #FF6347); /* Adjust the color codes as needed */
-            margin: 0; /* Remove default margin */
-            height: 100vh; /* Ensure the gradient covers the entire viewport height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white; /* Set text color to contrast with the background */
-        }
     </style>
 
     
@@ -56,12 +47,14 @@
   <body>
     
 <main class="container py-5">
-  <h1>Instagram </h1></h1>
-  <p class="lead">Integrate <a href="https://instagram.com/">IG</a> Vist our socials and support the people who want to support you .</p>
+  <h1>Bootstrap and Masonry</h1>
+  <p class="lead">Integrate <a href="https://masonry.desandro.com/">Masonry</a> with the Bootstrap grid system and cards component.</p>
 
   <p>Masonry is not included in Bootstrap. Add it by including the JavaScript plugin manually, or using a CDN like so:</p>
 
-<script src=&quot;https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js&quot; integrity=&quot;sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D&quot; crossorigin=&quot;anonymous&quot; async&gt;&lt;/script&gt;>
+  <pre><code>
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js&quot; integrity=&quot;sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D&quot; crossorigin=&quot;anonymous&quot; async&gt;&lt;/script&gt;
+  </code></pre>
 
   <p>By adding <code>data-masonry='{"percentPosition": true }'</code> to the <code>.row</code> wrapper, we can combine the powers of Bootstrap's responsive grid and Masonry's positioning.</p>
 
@@ -85,7 +78,7 @@
             <p>A well-known quote, contained in a blockquote element.</p>
           </blockquote>
           <figcaption class="blockquote-footer mb-0 text-muted">
-            Working out changed my life, the respect that came with it is pricessless<cite title="Source Title">Thony Gorbagoo</cite>
+            Someone famous in <cite title="Source Title">Source Title</cite>
           </figcaption>
         </figure>
       </div>
@@ -105,10 +98,10 @@
       <div class="card bg-primary text-white text-center p-3">
         <figure class="mb-0">
           <blockquote class="blockquote">
-            <p> The courses fixed my hairloss!.</p>
+            <p>A well-known quote, contained in a blockquote element.</p>
           </blockquote>
           <figcaption class="blockquote-footer mb-0 text-white">
-            -Someone title="Source Title">Bald</cite>
+            Someone famous in <cite title="Source Title">Source Title</cite>
           </figcaption>
         </figure>
       </div>
@@ -116,8 +109,8 @@
     <div class="col-sm-6 col-lg-4 mb-4">
       <div class="card text-center">
         <div class="card-body">
-          <h5 class="card-title"> Change starts first within you before it will physically show </h5>
-          <p class="card-text"> Lebron james.</p>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -132,10 +125,10 @@
       <div class="card p-3 text-end">
         <figure class="mb-0">
           <blockquote class="blockquote">
-            <p>My cats love me now that i dont eat all their food and ive become better at sharing.</p>
+            <p>A well-known quote, contained in a blockquote element.</p>
           </blockquote>
           <figcaption class="blockquote-footer mb-0 text-muted">
-            Someone who worked out with us <cite title="Source Title">Klaudia</cite>
+            Someone famous in <cite title="Source Title">Source Title</cite>
           </figcaption>
         </figure>
       </div>
