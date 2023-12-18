@@ -6,114 +6,25 @@
     <meta name="description" content="">
     
 <title>Test page</title>
-<a href="./contact.html"><p>click here</p>
-<a href="./blog.html"><p>Click here </p>
-  
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            padding: 15px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-            position: relative;
-        }
-
-        nav ul li:hover ul {
-            display: block;
-        }
-
-        nav ul ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-        }
-
-        nav ul ul li {
-            width: 100%;
-            text-align: left;
-        }
-
-        .index-cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .card {
-            width: calc(25% - 20px);
-            margin: 10px;
-            background-color: #f0f0f0;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <nav>
-            <h1>Your Website</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li>
-                    <a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="index-cards">
-        <div class="card">
-            <h2>Card 1</h2>
-            <p>Content of Card 1 goes here.</p>
-        </div>
-        <div class="card">
-            <h2>Card 2</h2>
-            <p>Content of Card 2 goes here.</p>
-        </div>
-        <div class="card">
-            <h2>Card 3</h2>
-            <p>Content of Card 3 goes here.</p>
-        </div>
-        <div class="card">
-            <h2>Card 4</h2>
-            <p>Content of Card 4 goes here.</p>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Please Workout</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="contact.html">Contact page</a></li>
+            <li><a class="dropdown-item" href="blog.html">News and Blog</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-
-</body>
-</html>
+  </div>
+</nav>
