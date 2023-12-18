@@ -60,7 +60,37 @@
             <!-- Your overlaid images go here -->
             <img src="./images/radiohead wallpaper.webp" alt="radiohead">
             <img src="./images/maxresdefault.jpg" alt="">
-            <!-- Add more images as needed -->
+          <style>
+            body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    background: url('background.jpg') center/cover no-repeat;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container img {
+    max-width: 100%;
+    height: auto;
+    /* Additional styling for your overlaid images */
+    margin: 10px; /* Adjust margin as needed */
+}
         </div>
     </div>
 </body>
