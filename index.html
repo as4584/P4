@@ -24,6 +24,137 @@
         }
       }
     </style>  
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .sticky-header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .course-container {
+            padding: 20px;
+        }
+
+        .course-section {
+            margin-bottom: 40px;
+        }
+
+        .course-header {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .collapsible {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your Sticky Header Goes Here -->
+    <div class="sticky-header">
+        <h1>Your Sticky Header</h1>
+        <!-- Add your content, logo, navigation, etc. -->
+    </div>
+
+    <!-- Course Content -->
+    <div class="course-container">
+        <div class="course-section" id="push-section">
+            <h2 class="course-header">Push Workouts</h2>
+            <div class="button-container">
+                <button onclick="toggleCollapsible('push-button1')">Button 1</button>
+                <button onclick="toggleCollapsible('push-button2')">Button 2</button>
+                <button onclick="toggleCollapsible('push-button3')">Button 3</button>
+                <button onclick="toggleCollapsible('push-button4')">Button 4</button>
+            </div>
+            <div id="push-button1" class="collapsible">
+                <!-- Content for Button 1 -->
+                <p>This is the content for Button 1.</p>
+            </div>
+            <div id="push-button2" class="collapsible">
+                <!-- Content for Button 2 -->
+                <p>This is the content for Button 2.</p>
+            </div>
+            <div id="push-button3" class="collapsible">
+                <!-- Content for Button 3 -->
+                <p>This is the content for Button 3.</p>
+            </div>
+            <div id="push-button4" class="collapsible">
+                <!-- Content for Button 4 -->
+                <p>This is the content for Button 4.</p>
+            </div>
+        </div>
+
+        <div class="course-section" id="pull-section">
+            <h2 class="course-header">Pull Workouts</h2>
+            <div class="button-container">
+                <button onclick="toggleCollapsible('pull-button1')">Button 1</button>
+                <button onclick="toggleCollapsible('pull-button2')">Button 2</button>
+                <button onclick="toggleCollapsible('pull-button3')">Button 3</button>
+                <button onclick="toggleCollapsible('pull-button4')">Button 4</button>
+            </div>
+            <div id="pull-button1" class="collapsible">
+                <!-- Content for Button 1 -->
+                <p>This is the content for Button 1.</p>
+            </div>
+            <div id="pull-button2" class="collapsible">
+                <!-- Content for Button 2 -->
+                <p>This is the content for Button 2.</p>
+            </div>
+            <div id="pull-button3" class="collapsible">
+                <!-- Content for Button 3 -->
+                <p>This is the content for Button 3.</p>
+            </div>
+            <div id="pull-button4" class="collapsible">
+                <!-- Content for Button 4 -->
+                <p>This is the content for Button 4.</p>
+            </div>
+        </div>
+
+        <div class="course-section" id="leg-section">
+            <h2 class="course-header">Leg Workouts</h2>
+            <div class="button-container">
+                <button onclick="toggleCollapsible('leg-button1')">Button 1</button>
+                <button onclick="toggleCollapsible('leg-button2')">Button 2</button>
+                <button onclick="toggleCollapsible('leg-button3')">Button 3</button>
+                <button onclick="toggleCollapsible('leg-button4')">Button 4</button>
+            </div>
+            <div id="leg-button1" class="collapsible">
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
