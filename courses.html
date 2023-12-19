@@ -134,5 +134,35 @@
                 <button onclick="toggleCollapsible('leg-button3')">Button 3</button>
                 <button onclick="toggleCollapsible('leg-button4')">Button 4</button>
             </div>
-            <div
+            <div id="leg-button1" class="collapsible">
+                <!-- Content for Button 1 -->
+                <p>This is the content for Button 1.</p>
+            </div>
+            <div id="leg-button2" class="collapsible">
+                <!-- Content for Button 2 -->
+                <p>This is the content for Button 2.</p>
+            </div>
+            <div id="leg-button3" class="collapsible">
+                <!-- Content for Button 3 -->
+                <p>This is the content for Button 3.</p>
+            </div>
+            <div id="leg-button4" class="collapsible">
+                <!-- Content for Button 4 -->
+                <p>This is the content for Button 4.</p>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        function toggleCollapsible(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
